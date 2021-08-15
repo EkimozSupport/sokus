@@ -7,7 +7,7 @@ from config import BOT_USERNAME
 @Client.on_message(filters.command(["start", "start@SoloFejMusicBot"]) & filters.private & ~filters.channel)
 async def start(_, message: Message):
     await message.reply_text(
-        text="**Hello 👋🏻 {}!**\n\nI **Can Play Music In Voice Chats of Telegram Groups.**I Have A **lot of cool feature that will amaze You!**\n\n**Click /cmdlist For More Help On My Usage ❤**".format(message.from_user.mention),
+        text="**Hello 👋🏻 {}!**\n\nI **Hello I'm a bot that can play music and videos in Telegram chats Give permissions to watch videos.**I Have A **lot of cool feature that will amaze You!**\n\n**Click /cmdlist For More Help On My Usage ❤**".format(message.from_user.mention),
         reply_markup=InlineKeyboardMarkup(
             [[
             InlineKeyboardButton("➕ Add To Your Group ➕", url="http://t.me/SoloFejMusicbot?startgroup=true")
